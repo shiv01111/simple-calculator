@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CALCULATOR</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+    <div id="main">
+        <form name="f">
+            <input type="text" name="clnum" id="display"><br>
+            <input type="button" value="1" onclick="f.clnum.value+=1">
+            <input type="button" value="2" onclick="f.clnum.value+=2">
+            <input type="button" value="3" onclick="f.clnum.value+=3">
+            <input type="button" value="+" onclick="add()">
+           
+            <br>
+            <input type="button" value="4" onclick="f.clnum.value+=4">
+            <input type="button" value="5" onclick="f.clnum.value+=5">
+            <input type="button" value="6" onclick="f.clnum.value+=6">
+            <input type="button" value="-" onclick="sub()">
+             <br> 
+            <input type="button" value="7" onclick="f.clnum.value+=7">
+            <input type="button" value="8" onclick="f.clnum.value+=8">
+            <input type="button" value="9" onclick="f.clnum.value+=9">
+            <input type="button" value="/" onclick="div()">
+            <br>
+            <!-- we use in c empty single quoate for the erase the all value and clear it. -->
+            <input type="button" value="C" onclick="f.clnum.value=''">
+            <input type="button" value="0" onclick="f.clnum.value+=0">
+            <input type="button" value="=" onclick="f.clnum.value=eval(f.clnum.value)">
+            <input type="button" value="X" onclick="mul()">
+            <br>
+        </form>
+    </div>
+    
+</body>
+</html>
